@@ -1,0 +1,43 @@
+.list {
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  max-width: 960px;
+}
+
+/* Breakpoint for ~ tablet and larger */
+@media only screen and (min-width: 640px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Breakpoint for typical desktop resolution */
+@media only screen and (min-width: 768px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.list-item {
+  display: block;
+  list-style: none;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: black;
+  background: white;
+  line-height: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.list-item[data-active="true"] {
+  border-color: orange;
+  background-color: yellow;
+}
+

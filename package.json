@@ -1,0 +1,19 @@
+{
+  "name": "multiplication-example",
+  "version": "1.0.0",
+  "description": "Example of an application to help a child understand multiplication",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "next": "^9.3.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
